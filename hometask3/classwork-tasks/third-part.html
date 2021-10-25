@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classwork 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --first-color: blue;
+            --second-color: darkblue;
+            --width: 7px;
+            color: white;
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+        }
+        .container{
+            margin: 0 auto;
+            max-width: 450px;
+            max-height: 900px;
+        }
+        .flex{
+            display: flex;
+        }
+        .width100{
+            width: 100%;
+        }
+        .header{
+            height: 350px;
+            column-gap: var(--width);
+        }
+        .main{
+            height: 150px;
+            background-color: var(--first-color);
+            margin: var(--width) 0;
+        }
+        .footer {
+            height: 150px;
+            column-gap: var(--width);
+        }
+        .header-item, .footer-item, .main{
+            justify-content: center;
+            align-items: center;
+        }
+        .header-item{
+            background-color: var(--first-color);
+        }
+        .footer-item{
+            background-color: var(--second-color);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header flex width100">
+        <div class="header-item flex width100">Home</div>
+        <div class="header-item flex width100">About</div>
+    </div>
+    <div class="main flex">Kabobs</div>
+    <div class="footer flex">
+        <div class="footer-item flex width100">Shishkabobs</div>
+        <div class="footer-item flex width100">BBQ kabobs</div>
+        <div class="footer-item flex width100">Summer kabobs</div>
+    </div>
+</div>
+</body>
+</html>

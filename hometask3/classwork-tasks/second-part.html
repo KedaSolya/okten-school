@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classwork 2</title>
+    <style>
+        :root{
+            --div-color: lightgray;
+            color: gray;
+        }
+        .container{
+            margin: 0 auto;
+            padding: 5px;
+            max-width: 700px;
+            max-height: 600px;
+            border: 2px solid gray;
+            border-radius: 3px;
+        }
+        .box{
+            justify-content: center;
+            align-items: center;
+            background-color: var(--div-color);
+        }
+        .A{
+            height: 120px;
+        }
+        .BCDEFG{
+            flex-direction: column;
+        }
+        .H{
+            margin-left: 5px;
+            margin-top: 5px;
+            display: flex;
+            width: 50%;
+        }
+        .BCD, .EFG{
+            margin-top: 5px;
+            column-gap: 5px;
+            height: 120px;
+        }
+        .flex{
+            display: flex;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="A box flex">A</div>
+    <div class="wrapper flex">
+        <div class="BCDEFG flex">
+            <div class="BCD flex">
+                <div class="B box flex">B</div>
+                <div class="C box flex">C</div>
+                <div class="D box flex">D</div>
+            </div>
+            <div class="EFG flex">
+                <div class="E box flex">E</div>
+                <div class="F box flex">F</div>
+                <div class="G box flex">G</div>
+            </div>
+        </div>
+        <div class="H box">H</div>
+    </div>
+</div>
+</body>
+</html>
