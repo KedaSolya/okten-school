@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Additional 1</title>
+    <style>
+        :root{
+            --width-between-rows: 7px;
+            --width-between-columns: 3px;
+            color: white;
+            font-size: 20px;
+        }
+        .container{
+            margin: 0 auto;
+            max-width: 450px;
+            max-height: 650px;
+        }
+        .header{
+            background-color: #8ACDFF;
+            height: 30px;
+        }
+        .hero{
+            background-color: plum;
+            height: 40%;
+        }
+        .sidebar{
+            background-color: darkseagreen;
+            height: 55%;
+        }
+        .main-content{
+            background-color: gold;
+            height: 70%;
+        }
+        .extra-content{
+            background-color: gray;
+            height: 25%;
+        }
+        .related-image{
+            background-color: limegreen;
+            flex-grow: 5;
+        }
+        .related-post{
+            background-color: lightpink;
+            flex-grow: 1;
+        }
+        .main{
+            display: flex;
+            height: 300px;
+        }
+        .footer{
+            background-color: darkorange;
+            height: 30px;
+        }
+        .related{
+             height: 55px;
+             margin-top: var(--width-between-columns);
+         }
+        .flex{
+             display: flex;
+             justify-content: center;
+             padding-top: 5px;
+         }
+        .width50{
+            width: 50%;
+        }
+        .row-distance{
+            margin-top: var(--width-between-rows)
+        }
+        .column-distance{
+            column-gap: var(--width-between-columns);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header flex">Header</div>
+    <div class="main column-distance row-distance">
+        <div class="description width50">
+            <div class="hero flex">Hero</div>
+            <div class="sidebar flex row-distance">Sidebar</div>
+        </div>
+        <div class="content width50 column-distance">
+            <div class="main-content flex">Main content</div>
+            <div class="extra-content flex row-distance">Extra content</div>
+        </div>
+    </div>
+    <div class="related flex column-distance">
+        <div class="related-image flex">Related image</div>
+        <div class="related-post flex">Related post</div>
+    </div>
+    <div class="footer flex row-distance">Footer</div>
+</div>
+</body>
+</html>
