@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework 3(2_2)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --widgest-color: blue;
+            --contact-color: dodgerblue;
+            --additional-color: darkblue;
+            color: white;
+            font-family: 'Zen Kaku Gothic New', sans-serif;
+        }
+        .container{
+            margin: 0 auto;
+            max-width: 520px;
+            max-height: 1100px;
+        }
+        .widgets{
+            width: 100%;
+            height: 200px;
+            background-color: var(--widgest-color);
+            font-size: 37px;
+        }
+        .contact{
+            width: 100%;
+            height: 400px;
+            background-color: var(--contact-color);
+            font-size: 37px;
+        }
+        .wrapper{
+            height: 220px;
+            display: flex;
+            flex-direction: row;
+            column-gap: 15px;
+            margin: 15px 0;
+        }
+        .item{
+            font-size: 20px;
+            width: 100%;
+            background-color: var(--additional-color);
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="widgets text">Widgets</div>
+    <div class="wrapper">
+        <div class="item text">Big Widgets</div>
+        <div class="item text">Bigger Widgets</div>
+        <div class="item text">Huge Widgets</div>
+    </div>
+    <div class="contact text">Contact</div>
+</div>
+
+</body>
+</html>
