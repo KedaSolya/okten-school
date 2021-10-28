@@ -1,0 +1,38 @@
+.footer{
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.contacts, .social-media{
+    display: flex;
+    flex-direction: column;
+}
+.contacts__title{
+    width: 90px;
+    height: 10px;
+    background-color: var(--darker-color);
+}
+.contacts__item{
+    width: 60px;
+    height: 5px;
+    margin: 5px 0;
+    background-color: var(--lighter-color);
+}
+.social-media__title{
+    width: 70px;
+    height: 20px;
+    background-color: var(--darker-color);
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 4px;
+    margin-top: 5px;
+}
+.s-icon{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: var(--lighter-color);
+}

@@ -1,0 +1,36 @@
+.hero__container{
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero__title{
+    width: 150px;
+    height: 15px;
+    background-color: var(--main-color);
+}
+.hero__subtitle{
+    width: 200px;
+    height: 15px;
+    background-color: var(--main-color);
+    margin: 5px 0;
+}
+.input-wrap{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+.hero__input{
+    background-color: white;
+    border-radius: 25px;
+    width: 200px;
+    height: 20px;
+    margin-left: 15px;
+}
+.hero__button{
+    background-color: var(--darker-color);
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    margin-left: -15px;
+}
