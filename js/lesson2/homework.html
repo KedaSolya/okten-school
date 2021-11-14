@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 2 | Homework</title>
+</head>
+<body>
+<script>
+    /*Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої
+     четверті години попадає число (в першу, другу, третю или четверту частину години).*/
+    /*const time = Math.floor(Math.random() * 59)
+    if (time <= 15) console.log("Число знаходиться у 1 чверті години")
+    else if (time <= 30) console.log("Число знаходиться у 2 чверті години")
+    else if (time <= 45) console.log("Число знаходиться у 3 чверті години")
+    else if (time <= 59) console.log("Число знаходиться у 4 чверті години")*/
+
+    /*У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду)
+    місяця потрапляє це число (у першу, другу чи третю).*/
+    /*const day = Math.floor(Math.random() * 30 + 1)
+    if (day <= 10) console.log("Випав день, який знаходиться у 1 декаді місяця")
+    else if (day <= 20) console.log("Випав день, який знаходиться у 2 декаді місяця")
+    else if (day <= 31) console.log("Випав день, який знаходиться у 3 декаді місяця")*/
+
+    /*У нас є змінна test, якщо дорівнює true, виведіть 'Вірно', інакше виведіть 'Неправильно'.
+    Перевірте роботу скрипта при test, що дорівнює true, false. Напишіть два варіанти скрипта -
+    з коротким записом(тернаркою)*/
+    //Варіант 1
+    /*const test1 = false
+    console.log(test1 ? "Правильно" : "Неправильно")
+    //Варіант 2
+    const test2 = 'true'
+    console.log(test2 === 'true' ? "Правильно" : "Неправильно")*/
+
+    /*Якщо змінна a не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт
+    при a, що дорівнює 1, 0, -3*/
+    /*function isCorrect(a){ console.log(a !== 0 ? "Вірно" : "Невірно") }
+    isCorrect(1)
+    isCorrect(0)
+    isCorrect(-3)*/
+
+    /*Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і
+    на екрані відображається інфа що заплановано на цей день.*/
+    /*const input = prompt('Введіть порядковий номер дня тижня', "1")
+    switch (input){
+        case "1":
+            document.write("13:00 - стоматолог<br/>17:00 - конференція<br/>21:00 - масаж")
+            break
+        case "2":
+            document.write("10:00 - англійська<br/>15:00 - універ")
+            break
+        case "3":
+            document.write("19:00 - німецька<br/>22:00 - ванна")
+            break
+        case "4":
+            document.write("14:00 - курси<br/>16:00 - англійська<br/>18:00 - похід в супермаркет")
+            break
+        case "5":
+            document.write("12:00 - німецька<br/>17:00 - універ<br/>21:00 - масаж")
+            break
+        case "6":
+            document.write("10:00 - танці<br/>12:00 - малювання")
+            break
+        case "7": document.write("12:00 - косметолог")
+            break
+        default: document.write("Ви ввели неправильний порядковий номер тижня.")
+    }*/
+
+    /*Потрібно визначити Високосний рік чи ні. Високосні роки діляться націло на 4.*/
+    /*const input = prompt('Введіть рік:')
+    alert(input % 4 === 0 ? "Рік високосний" : "Рік не високосний")*/
+
+    /*Використовуючи конструкцію if..else, напишіть код, який запитуватиме: „Яка «офіційна» назва JavaScript?“
+    Якщо користувач вводить «ECMAScript», то показати: «Правильно!», інакше – відобразити: «Не знаєте? ECMAScript!*/
+    /*const name = prompt("Яка «офіційна» назва JavaScript?")
+    if (name === "ECMAScript") alert("Правильно!")
+    else alert("Не знаєте? ECMAScript!")*/
+</script>
+</body>
+</html>

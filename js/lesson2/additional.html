@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 2 | Additional</title>
+</head>
+<body>
+<script>
+    /*Нам дано масив друзів let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"]; Потрібно зробити перевірку якщо
+    кількість елементів у масиві більше або дорівнює 3, то виводиться повідомлення про те, що це великий масив, в якому 3 і більше елементи.
+    Інакше слід вивести на екран повідомлення про те, що це маленький масив, в якому менше 3-х елементів.*/
+    /*const friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"]
+    console.log(friends.length >= 3 ? 'Це великий масив, в якому 3 і більше елементів' : 'Це маленький масив, в якому менше 3-х елементів')*/
+
+    /*Маємо 3 числа і нам потрібно знайти те що посередині. Знайти, яке з них є середнім (більше одного,
+    але менше за інше). Перевірити, чи знаходиться середнє число між двома іншими.*/
+    /*const numbArr =[7, 10, 9]
+    let middleNumb
+    for (let i = 0; i < numbArr.length; i++){
+        if (numbArr[i] == numbArr[numbArr.length - i - 1]) {
+            middleNumb = numbArr[i]
+            console.log('Число посередені - ' + middleNumb)
+            break
+        }
+    }
+    const max = Math.max(...numbArr)
+    const min = Math.min(...numbArr)
+    for (let i = 0; i < numbArr.length; i++){
+        if (numbArr[i] < max && numbArr[i] > min) console.log('Число з середнім значенням - ' + numbArr[i])
+    }*/
+
+    /* Перепишіть конструкцію if з використанням умовного оператора '?':
+            let result;
+            if (a + b < 4) {
+               result = 'Мало';
+            } else {
+               result = 'Багато';
+            }*/
+    //let result = (2 + 4 < 4) ? 'Мало':'Багато';
+
+    /*Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем
+    напишіть це тернарним оператором*/
+    /*const numb = prompt('Введіть число:')
+    alert((numb >= -100 && numb < 0) ? 'Число негативне' : (numb > 0 && numb <= 100) ? 'Число позитивне' : (numb === '0') ? 'Це нуль' : 'Число не належить проміжку [-100; 100]')*/
+</script>
+</body>
+</html>
