@@ -1,0 +1,92 @@
+@media screen and (max-width: 400px) {
+    .header__logo > img{
+        width: 60px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .header__info{
+        display: none;
+        padding: 0;
+    }
+    .burger-menu{
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+        position: absolute;
+        right: 0;
+    }
+    .burger-menu__line{
+        width: 50px;
+        height: 3px;
+        border-radius: 7px;
+        background-color: #FF7400;
+    }
+    nav{
+        margin: 55px 0 0;
+        justify-content: center;
+    }
+    nav > p:nth-child(1){
+        font-size: 24px;
+    }
+    nav > p:nth-child(2){
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .nav__home-line{
+        display: none;
+    }
+    .introduction{
+        flex-direction: column;
+        row-gap: 30px;
+        left: 15%;
+    }
+    .our-history{
+        height: 1100px;
+        padding-top: 850px;
+        margin: 0 auto;
+    }
+    .our-history__title, .our-history__color-title{
+        flex-direction: column;
+        font-size: 40px;
+    }
+    .our-history__text-block{
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .our-history__numbers{
+        flex-direction: column;
+        row-gap: 20px;
+        margin-top: 20px;
+    }
+    .our-history__background{
+        top: 1560px;
+        left: 150px;
+        max-width: 120px;
+        height: 120px;
+    }
+    .our-history__cake{
+        top: 1520px;
+        left: 90px;
+        max-width: 140px;
+        height: 290px;
+    }
+    .our-history__table{
+        top: 1650px;
+        right: 5px;
+        max-width: 160px;
+        height: 180px;
+    }
+    .our-history__dishes{
+        top: 1520px;
+        left: 0;
+        max-width: 160px;
+        height: 240px;
+    }
+    .order{
+        flex-direction: column;
+    }
+
+}
