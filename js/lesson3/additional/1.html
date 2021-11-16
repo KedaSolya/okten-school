@@ -627,15 +627,25 @@
             body: 'cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut'
         }
     ];
-    document.write('<div class="wrapper">')
+    //Варіант 1
+    /*document.write('<div class="wrapper">')
     for (let i = 0; i < objs.length; i++){
         document.write('<div class="post-cards">')
         document.write(`<h3>${objs[i].id} - ${objs[i].title}</h3>`)
         document.write(`<p>${objs[i].body}</p>`)
         document.write('</div>')
     }
-    document.write('</div>')
+    document.write('</div>')*/
 
+    //Варіант 2
+    document.write('<div class="wrapper">')
+    for (const key in objs) {
+        document.write('<div class="post-cards">')
+        document.write(`<h3>${objs[key].id} - ${objs[key].title}</h3>`)
+        document.write(`<p>${objs[key].body}</p>`)
+        document.write('</div>')
+    }
+    document.write('</div>')
     const wrap = document.querySelector('.wrapper')
     wrap.style.display = 'grid'
     wrap.style.gridTemplateColumns = '1fr 1fr 1fr 1fr 1fr'

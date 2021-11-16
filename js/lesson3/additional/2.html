@@ -267,7 +267,8 @@
       }
     }
   ];
-  document.write('<div class="box">')
+  //Варіант 1
+  /*document.write('<div class="box">')
   for (let i = 0; i < usersList.length; i++) {
     document.write('<div class="block">')
     document.write(`<h2>${usersList[i].id} - ${usersList[i].name} - ${usersList[i].username}</h2>`)
@@ -277,6 +278,22 @@
     document.write(`<p>Street - ${usersList[i].address.street}</p>`)
     document.write(`<p>Suite - ${usersList[i].address.suite}</p>`)
     document.write(`<p>Zip code - ${usersList[i].address.zipcode}</p>`)
+    document.write('</div>')
+    document.write('</div>')
+  }
+  document.write('</div>')*/
+
+  //Варіант 2
+  document.write('<div class="box">')
+  for (const key in usersList) {
+    document.write('<div class="block">')
+    document.write(`<h2>${usersList[key].id} - ${usersList[key].name} - ${usersList[key].username}</h2>`)
+    document.write(`<h3>${usersList[key].email} - ${usersList[key].phone}</h3>`)
+    document.write('<div class="address">')
+    document.write(`<p>City - ${usersList[key].address.city}</p>`)
+    document.write(`<p>Street - ${usersList[key].address.street}</p>`)
+    document.write(`<p>Suite - ${usersList[key].address.suite}</p>`)
+    document.write(`<p>Zip code - ${usersList[key].address.zipcode}</p>`)
     document.write('</div>')
     document.write('</div>')
   }
