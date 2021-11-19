@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 5 | Additional</title>
+</head>
+<body>
+<script>
+    /*Дано натуральное число n. Выведите все числа от 1 до n.*/
+    // function recur(i, n){
+    //     console.log(i)
+    //     if (i === n) return
+    //     recur(i+1, n)
+    // }
+    // recur(1, 10)
+
+    /*Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или в порядке убывания в противном случае.*/
+    // function recursive(a, b){
+    //     if (a === b){
+    //         console.log(a)
+    //         return
+    //     }
+    //     if (a > b){
+    //         console.log(a)
+    //         recursive(a - 1, b)
+    //     }
+    //     if (a < b){
+    //         console.log(a)
+    //         recursive(a + 1, b)
+    //     }
+    // }
+
+    /*функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+        EXAMPLE:
+        foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
+        foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
+        foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]*/
+    // let changeByIndex = (array, index) => {
+    //     for (let i = 0; i < array.length; i++) {
+    //         if (i === index){
+    //             let temp = array[i]
+    //             array[i] = array[i + 1]
+    //             array[i + 1] = temp
+    //
+    //             // Варіант 2
+    //             // array[i] = array[i] ^ array[i+1]
+    //             // array[i+1] = array[i] ^ array[i+1]
+    //             // array[i] = array[i] ^ array[i+1]
+    //         }
+    //     }
+    //     console.log(array)
+    // }
+
+    /*Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+        Двожина масиву від 2 до 100
+        EXAMPLE:
+        [1,0,6,0,3] => [1,6,3,0,0]
+        [0,1,2,3,4] => [1,2,3,4,0]
+        [0,0,1,0]   => [1,0,0,0]*/
+    // let nullFunc = array => {
+    //     let tempArray = [], count = 0
+    //     for (let i = 0, k = 0; i < array.length; i++) {
+    //         if (array[i] !== 0){
+    //             tempArray[k] = array[i]
+    //             k++
+    //         } else count++
+    //     }
+    //     tempArray.length += count
+    //     for (let i = 0; i < tempArray.length; i++)
+    //         if (!tempArray[i])
+    //             tempArray[i] = 0
+    //     console.log(tempArray)
+    // }
+    // nullFunc([0,0,0,1,6])
+</script>
+</body>
+</html>
