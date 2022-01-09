@@ -1,0 +1,26 @@
+.users {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 1200px;
+}
+
+.user {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid dodgerblue;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 3px;
+    border: dodgerblue;
+}

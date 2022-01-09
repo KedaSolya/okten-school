@@ -1,0 +1,37 @@
+body {
+    width: 1200px;
+    text-align: center;
+}
+
+.button_title {
+    padding: 10px 0;
+    margin: 10px 50px 30px;
+    width: 90%;
+    border-radius: 3px;
+    border: gray;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.button_item {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 15%;
+    margin: 30px 5px 10px;
+    padding: 10px;
+    border: 2px solid dodgerblue;
+}
+
+.button_body {
+    height: 80px;
+}
+
+.button_post {
+    align-self: end;
+    border-radius: 4px;
+    border: 2px solid dodgerblue;
+}
